@@ -1,0 +1,13 @@
+<html>
+<body style="font-family: sans-serif; padding: 40px; font-size: 20px;">
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    if (code) {
+      document.body.innerHTML = "<b>Your TikTok CODE:</b><br><br>" + code;
+    } else {
+      document.body.innerHTML = "No code found. TikTok chưa redirect về.";
+    }
+  </script>
+</body>
+</html>
